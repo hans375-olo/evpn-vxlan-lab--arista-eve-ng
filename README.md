@@ -223,18 +223,15 @@ EVE-NG Community on Ubuntu VM, hosted on VMware Workstation on Windows. Nested v
 
 | Image      | Version      | Source                                        |
 |------------|--------------|-----------------------------------------------|
-| vEOS-lab   | 4.29.10.1M   | Arista Software Downloads (free account)      |
+| vEOS-lab   | 4.30.10M     | Arista Software Downloads (free account)      |
 
-### vEOS image preparation (vmdk → EVE-NG)
+### vEOS image (qcow2 → EVE-NG)
 
-Arista distributes vEOS-lab as a `.vmdk`. EVE-NG requires `.qcow2`:
+Arista distributes vEOS-lab as a `.qcow2`, which EVE-NG requires. Import with:
 
 ```bash
-# On the EVE-NG host (as root)
-qemu-img convert -f vmdk -O qcow2 vEOS-lab-4.29.10.1M.vmdk vEOS-lab-4.29.10.1M.qcow2
-
-mkdir -p /opt/unetlab/addons/qemu/veos-4.29.10.1M
-cp vEOS-lab-4.29.10.1M.qcow2 /opt/unetlab/addons/qemu/veos-4.29.10.1M/hda.qcow2
+mkdir -p /opt/unetlab/addons/qemu/veos-4.30.10M
+cp vEOS-lab-4.30.10M.qcow2 /opt/unetlab/addons/qemu/veos-4.30.10M/hda.qcow2
 /opt/unetlab/wrappers/unl_wrapper -a fixpermissions
 ```
 
