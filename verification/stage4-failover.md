@@ -48,7 +48,7 @@ via surviving SPINE-2 path. No route withdrawal, no traffic interruption.
   SPINE-2                  10.1.2.0 4 65000            128       140    0    0 01:29:26 Estab   7      7
 ```
 
-**Observation:** SPINE-1 session re-established in ~8 seconds, full prefix table
+**Observation:** SPINE-1 session re-established in ~1 second, full prefix table
 restored. Both sessions Established, `PfxRcd 7` on both.
 
 ---
