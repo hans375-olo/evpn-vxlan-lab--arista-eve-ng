@@ -171,7 +171,7 @@ Results:
 | Event | Detection | Reconvergence | Packet loss |
 |-------|-----------|---------------|-------------|
 | Spine link failure | Physical signal (immediate) | Sub-second | 0 |
-| Spine link restore | Physical signal | ~8 seconds | 0 |
+| Spine link restore | Physical signal | ~1 second | 0 |
 
 Key takeaway: link failures are detected via physical signal rather than BGP hold timer expiry. The surviving spine path is already installed via ECMP before the failure occurs, so traffic continues without interruption.
 
