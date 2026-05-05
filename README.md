@@ -1,4 +1,4 @@
-# evpn-vxlan-lab--arista-eve-ng
+# EVPN/VXLAN & BGP spine-leaf fabric lab on EVE-NG with Arista vEOS
 
 A hands-on EVE-NG lab demonstrating a full EVPN/VXLAN data centre fabric using **Arista vEOS** throughout. The lab covers eBGP underlay design, BGP EVPN overlay, L2 stretch, symmetric IRB for inter-VLAN routing, and failure testing — the core building blocks of a modern DC fabric.
 
